@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: 你的第二大脑
+  pageTitle: Feng's Blog
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: false
-  locale: en-US
+  locale: zh-CN
   baseUrl: blog.fengx.eu.org
   ignorePatterns:
     - private
@@ -198,8 +198,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        个人主页: https://fengx.eu.org
+        GitHub: https://github.com/unixcs
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
