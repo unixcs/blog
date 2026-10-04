@@ -9,6 +9,12 @@ title: Feng's Blog
 - 返回 **[个人主页](https://fengx.eu.org)**
 - 文章从博客园迁移 + Obsidian 持续更新，推送 GitHub 自动部署
 
+## 近期原创
+
+- [旧笔记本当服务器：通电自启动与真熄屏](migrated/laptop-server-autostart-screenoff.md)
+- [OpenCode 斜杠命令在 MindFS 下失效？三条绕法](migrated/opencode-slash-mindfs-workaround.md)
+- [Telegram Bot 无回复排查 SOP](migrated/telegram-bot-noreply-sop.md)
+
 ## 机顶盒刷机
 
 - [E900V22E 刷 armbian && 刷全网通安卓 TV](migrated/e900v22e-armbian-android-tv.md)
