@@ -361,4 +361,4 @@ docker compose ps
 ```
 
 ---
-**相关**：[[7.11美的空调midea_ac_lan插件迁移记录]] [[7.13 HA巴法云插件兼容修复]] [[7.23 白嫖云盘cftc,tgState,tgNetDisc]] [[对话笔记全量梳理表]]
+**相关**：[[7.17-WSL_YoShop与CRMEB_Docker手动启停部署说明]] [[8.13-Hermes-网关免费模型自动切换与报错修复]] [[7.25-在-yun1-部署-new-api-并通过-Cloudflare-域名-HTTPS-访问-—-实操记录]] [[7.11美的空调midea_ac_lan插件迁移记录]] [[7.13 HA巴法云插件兼容修复]] [[7.23 白嫖云盘cftc,tgState,tgNetDisc]] [[对话笔记全量梳理表]]
