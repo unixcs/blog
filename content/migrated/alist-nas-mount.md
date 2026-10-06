@@ -41,3 +41,6 @@ docker exec -it alist ./alist -password   # 查看初始密码
 见官方 `features/encrypt` 文档，给首页/目录加密码，防裸奔。
 
 ![首页加密](assets/alist-nas-mount/img5.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[5.8 JP NAS 本地部署 Kimi GLM 统一网关]]

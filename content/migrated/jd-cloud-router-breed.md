@@ -99,3 +99,6 @@ Breed 里：开环境变量（内部）保存重启 → 开 breed 保存。用 W
 ![集客](assets/jd-cloud-router-breed/img31.png)
 
 ![集客](assets/jd-cloud-router-breed/img32.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[华为悦盒 EC6180V9 刷 ubuntu20.04 做 NAS]]

@@ -572,4 +572,6 @@ Phase 1 不要过度设计日志系统。
 10. 确认早报
 
 ---
-**相关**：[[7.23-白嫖云盘cftc,tgState,tgNetDisc]] [[5.5-Cloudflare-AI内容流水线部署]] [[8.15-OpenClash节点延迟诊断]] [[5.5 Cloudflare AI内容流水线部署]] [[5.5 CloudflareSub Wrangler 部署]] [[5.8 JP NAS 本地部署 Kimi GLM 统一网关]] [[对话笔记全量梳理表]]
+
+---
+**相关**： [[00-索引-AI工程索引]] [[7.23 白嫖云盘cftc,tgState,tgNetDisc]]

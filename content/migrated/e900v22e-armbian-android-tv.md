@@ -84,3 +84,6 @@ cat /proc/device-tree/amlogic-dt-id   # 查看芯片
 ![刷机](assets/e900v22e-armbian-android-tv/img4.png)
 
 ![刷机](assets/e900v22e-armbian-android-tv/img5.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[华为悦盒 EC6180V9 刷 ubuntu20.04 做 NAS]]

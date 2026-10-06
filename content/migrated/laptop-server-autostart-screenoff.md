@@ -40,3 +40,6 @@ cat /sys/class/backlight/intel_backlight/actual_brightness  # 期望 0
 ## 三、效果
 
 屏幕彻底黑、整机功耗降一档，远程 SSH 毫无影响。一台吃灰笔记本，就这样变成 7×24 的开发机。
+
+---
+**相关**： [[00-索引-网络基建索引]] [[openclash配置与WSL代理迁移总结]]

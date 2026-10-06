@@ -24,3 +24,6 @@ description: 全网会话最高频故障：Bot 无回复。按网关→限流→
 ## 待补
 
 gateway service 与 bot binding 的完整检查清单（含各配置文件位置），补完后升级为铁律级文档。
+
+---
+**相关**： [[00-索引-AI工程索引]] [[Hermes Telegram Bot无回复排查SOP]]

@@ -67,3 +67,6 @@ Cron 不支持随机，折中办法：同一任务建多个，分别设不同时
 ![使用方法](assets/qinglong-auto-checkin/img11.png)
 
 ![使用方法](assets/qinglong-auto-checkin/img12.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[华为悦盒上 Docker 装 HomeAssistant + HACS]]

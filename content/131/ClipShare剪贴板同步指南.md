@@ -125,6 +125,8 @@ D:\Program\soft\电脑软件\CclipShare\clipshare.exe
 
 
 ---
-**相关**：[[8.29-Tailscale-多设备组网排查与延迟需求]] [[8.15-OpenClash节点延迟诊断]] [[7.5-Onedrive-和-FastNote-方案对比]] [[8.5 公众号推送SOP与封面撑高bug修复]] [[对话笔记全量梳理表]]
 
 > 注：本文涉及的服务器公网 IP / Tailnet / 局域网 IP 已脱敏，请替换为你自己的地址。
+
+---
+**相关**： [[00-索引-网络基建索引]] [[4.27 Bitwarden + Vaultwarden+ Tailscale]]

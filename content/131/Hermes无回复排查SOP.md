@@ -15,4 +15,6 @@ origin: 原创初稿
 > 已发布：https://blog.fengx.eu.org/migrated/telegram-bot-noreply-sop（2026-10-05）
 
 ---
-**相关**：[[8.13-Hermes-网关免费模型自动切换与报错修复]] [[OpenCode斜杠命令失效绕法]] [[8.12-NAS-Hermes-发布工作流排查]]
+
+---
+**相关**： [[00-索引-AI工程索引]] [[Telegram Bot 无回复排查 SOP：从网关到限流到记忆]]

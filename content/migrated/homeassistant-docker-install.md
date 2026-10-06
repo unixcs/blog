@@ -60,3 +60,6 @@ docker restart <ha容器>
 重启后再登录即可见 HACS 入口，可装各类第三方集成。HACS 安装失败多为网络问题，挂代理或换源重试。
 
 ![安装](assets/homeassistant-docker-install/img1.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[随身 WiFi 刷 Debian + Samba 共享]]

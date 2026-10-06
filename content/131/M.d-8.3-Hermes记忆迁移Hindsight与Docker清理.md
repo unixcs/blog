@@ -55,6 +55,8 @@ tags: [对话笔记]
 
 
 ---
-**相关**：[[8.16-路由器OpenClash代理与hindsight单层化]] [[5.8-JP-NAS-本地部署-Kimi-GLM-统一网关]] [[7.25-在-yun1-部署-new-api-并通过-Cloudflare-域名-HTTPS-访问-—-实操记录]] [[8.2 jp CPA workbuddy qoderwork 插件故障排查]] [[8.3 AI工具链收口与自媒体内容生产—123阶段执行规划]] [[8.3 AI工具链收口与自媒体内容生产—执行规划]] [[对话笔记全量梳理表]]
 
 > 注：本文涉及的服务器公网 IP / Tailnet / 局域网 IP 已脱敏，请替换为你自己的地址。
+
+---
+**相关**： [[00-索引-AI工程索引]] [[8.16 路由器OpenClash代理与hindsight单层化]]

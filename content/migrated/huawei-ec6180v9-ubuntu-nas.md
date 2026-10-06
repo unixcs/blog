@@ -78,3 +78,6 @@ dd if=/dev/block/mmcblk0p1 of=/mnt/sda/sda1/mmcblk0p1
 ![刷机](assets/huawei-ec6180v9-ubuntu-nas/img16.png)
 
 ![刷机](assets/huawei-ec6180v9-ubuntu-nas/img17.jpg)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[京东云无线宝（一代 128G）刷机：编程器刷 Breed 上老毛子/集客]]

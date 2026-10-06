@@ -17,4 +17,6 @@ origin: 原创初稿
 > 已发布：https://blog.fengx.eu.org/migrated/opencode-slash-mindfs-workaround（2026-10-05）
 
 ---
-**相关**：[[AI-多服务器统一运维与自动部署-Plan-V1]] [[9.3-MindFS模型同步修复]] [[腾讯云环境快速上手]]
+
+---
+**相关**： [[00-索引-AI工程索引]] [[OpenCode 斜杠命令在 MindFS 下失效？三条绕法]]

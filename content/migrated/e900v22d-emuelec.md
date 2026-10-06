@@ -31,3 +31,6 @@ E900V22D，晶晨 S905LA，2G + 8G，USB2.0×2 + 百兆网卡 + 蓝牙（无 WiF
 自带系统不刷机装不了第三方 App，想干回老本行则卡刷：U 盘格 FAT32，把 `recovery.img`、`update.zip`、`factory_update_param.aml` 拷根目录；盒子接 HDMI/网线/电源保持关机，U盘插靠近网口的口，加电同时按遥控右键（每秒 3 次）引导 REC，约 3 分钟刷完自动重启。设置与恢复出厂密码：10086。
 
 ![TOP](assets/e900v22d-emuelec/img1.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[E900V22E 刷 armbian && 刷全网通安卓 TV]]

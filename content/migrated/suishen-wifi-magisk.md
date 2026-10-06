@@ -54,3 +54,6 @@ miko + QPT 把分区（特别是 boot）备好，详见《随身 WiFi 备份篇�
 ![刷面具](assets/suishen-wifi-magisk/img13.png)
 
 ![刷面具](assets/suishen-wifi-magisk/img14.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[随身 WiFi 刷 Debian + Samba 共享]]

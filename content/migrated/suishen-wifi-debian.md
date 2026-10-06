@@ -70,3 +70,6 @@ smbpasswd -a root && sudo samba restart
 ![debian 设置](assets/suishen-wifi-debian/img14.png)
 
 ![坑](assets/suishen-wifi-debian/img15.png)
+
+---
+**相关**： [[00-索引-玩机NAS索引]] [[随身 WiFi 刷面具拿 Root（uz801）]]
