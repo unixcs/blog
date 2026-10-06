@@ -14,6 +14,8 @@ origin: 博客园迁移
 
 在大妈签到大半年，身为懒癌患者，手动签到太不得劲，遂上青龙 + Sitoi 开源脚本（dailycheckin）。
 
+
+![起因](assets/qinglong-auto-checkin/img1.png)
 ## 坑 1：安装依赖报错
 
 ```bash
@@ -43,3 +45,25 @@ docker cp smzdm_signin.js <容器id>:/ql/scripts
 ## 防封：随机定时思路
 
 Cron 不支持随机，折中办法：同一任务建多个，分别设不同时间点（如每周 1/3/5/7 跑 A 时间，2/4/6 跑 B 时间），错峰执行。
+
+![开始](assets/qinglong-auto-checkin/img2.png)
+
+![开始](assets/qinglong-auto-checkin/img3.png)
+
+![开始](assets/qinglong-auto-checkin/img4.png)
+
+![开始](assets/qinglong-auto-checkin/img5.png)
+
+![开始](assets/qinglong-auto-checkin/img6.png)
+
+![开始](assets/qinglong-auto-checkin/img7.png)
+
+![开始](assets/qinglong-auto-checkin/img8.png)
+
+![开始](assets/qinglong-auto-checkin/img9.png)
+
+![使用方法](assets/qinglong-auto-checkin/img10.png)
+
+![使用方法](assets/qinglong-auto-checkin/img11.png)
+
+![使用方法](assets/qinglong-auto-checkin/img12.png)

@@ -29,12 +29,26 @@ miko vs QPT（个人理解）：miko 是整包救砖，QPT 是精细到分区，
 
 联机看信息 → 选中备份 QCN → 一键执行，收好文件。
 
+
+![QCN基带 备份](assets/suishen-wifi-backup/img1.png)
 ## 分区备份
 
 1. 秋之盒重启进 9008（设备管理器确认显示 9008）。
 2. miko：打开工具 → 备份分区，生成救砖包。
 3. QPT：读取 → 逐分区备份。
 
+
+![分区备份](assets/suishen-wifi-backup/img2.png)
+
+![分区备份](assets/suishen-wifi-backup/img3.png)
+
+![分区备份](assets/suishen-wifi-backup/img4.png)
+
+![分区备份](assets/suishen-wifi-backup/img5.png)
+
+![还原分区](assets/suishen-wifi-backup/img6.png)
+
+![还原分区](assets/suishen-wifi-backup/img7.png)
 ## 还原
 
 短接进 9008 → miko 还原整包，或 QPT 针对单个分区还原。

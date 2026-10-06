@@ -20,6 +20,12 @@ origin: 博客园迁移
 2. STB 工具输入密码开 adb 权限。
 3. `adb connect [IP]`，`cat /dev/block/mmcblk0p1 | grep -a hi3798` 确认型号。
 
+
+![开启adb](assets/huawei-ec6180v9-ubuntu-nas/img1.png)
+
+![开启adb](assets/huawei-ec6180v9-ubuntu-nas/img2.png)
+
+![开启adb](assets/huawei-ec6180v9-ubuntu-nas/img3.png)
 ## 备份分区（先备份再折腾）
 
 ```bash
@@ -32,6 +38,14 @@ dd if=/dev/block/mmcblk0p1 of=/mnt/sda/sda1/mmcblk0p1
 
 还原示例：`dd if=/mnt/sda/sda1/system of=/dev/block/mmcblk0p15`。
 
+
+![备份](assets/huawei-ec6180v9-ubuntu-nas/img4.png)
+
+![备份](assets/huawei-ec6180v9-ubuntu-nas/img5.png)
+
+![备份](assets/huawei-ec6180v9-ubuntu-nas/img6.png)
+
+![备份](assets/huawei-ec6180v9-ubuntu-nas/img7.png)
 ## adb 线刷 ubuntu
 
 原理：adb 进 shell 后用 `dd` 全盘刷写 eMMC。
@@ -44,3 +58,23 @@ dd if=/dev/block/mmcblk0p1 of=/mnt/sda/sda1/mmcblk0p1
 ## 变砖复活：短接 U 盘卡刷（2022-08-30 补）
 
 一次重启变砖，TTL 线在路上，群里得知可短接卡刷：U 盘（16~64G）用 USB_format 专用工具格式化，卡刷包解压放根目录，找到短接点 J16：**断电 → 短接住 → 上电 → 5 秒松开 → 自动刷机**，约 3 分钟出现刷机界面，等作者微信二维码出现即结束。注意：刷机 U 盘接远离电源的口，系统挂载 U 盘接靠近电源的口。
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img8.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img9.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img10.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img11.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img12.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img13.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img14.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img15.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img16.png)
+
+![刷机](assets/huawei-ec6180v9-ubuntu-nas/img17.jpg)

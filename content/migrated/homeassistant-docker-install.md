@@ -25,6 +25,28 @@ systemctl daemon-reload && systemctl restart docker
 
 跑官方 `install-homeassistant.sh` 一键脚本（按文档选对应设备类型）。
 
+
+![hacs 插件](assets/homeassistant-docker-install/img2.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img3.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img4.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img5.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img6.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img7.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img8.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img9.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img10.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img11.png)
+
+![hacs 插件](assets/homeassistant-docker-install/img12.png)
 ## 装 HACS（第三方插件商城）
 
 ```bash
@@ -36,3 +58,5 @@ docker restart <ha容器>
 ```
 
 重启后再登录即可见 HACS 入口，可装各类第三方集成。HACS 安装失败多为网络问题，挂代理或换源重试。
+
+![安装](assets/homeassistant-docker-install/img1.png)

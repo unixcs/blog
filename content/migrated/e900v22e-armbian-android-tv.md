@@ -14,6 +14,8 @@ origin: 博客园迁移
 
 安徽移动创维 E900V22E 盒子，芯片晶晨 S905L2B。目标三连：破解移动系统刷第三方桌面、刷入 armbian（已解决网卡不能驱动问题）、刷安卓 TV 系统。
 
+
+![前言](assets/e900v22e-armbian-android-tv/img1.png)
 ## 一、破解 + 第三方桌面
 
 ### 准备工作
@@ -23,6 +25,8 @@ origin: 博客园迁移
 - 开心电视刷机工具、网线、HDMI 显示器
 - 注意：E900V22E 分晶晨 S905-2-B 和海思主控两种，本教程只适用于晶晨版（2+8）
 
+
+![准备工作](assets/e900v22e-armbian-android-tv/img2.png)
 ### 步骤
 
 1. U 盘用 USBFormat.exe 格成 FAT32，解压 `22ES9052B.zip` 放 U 盘根目录，插到盒子靠近电源口的 USB 口。
@@ -43,6 +47,18 @@ cat /proc/device-tree/amlogic-dt-id   # 查看芯片
 
 老版本 armbian 5.77 能进系统但网口无驱动。解法：在 CSDN 大佬帮助下替换根目录 `u-boot.ext`，用新版 armbian 即可正常驱动网口。
 
+
+![刷入armbian](assets/e900v22e-armbian-android-tv/img6.png)
+
+![刷入armbian](assets/e900v22e-armbian-android-tv/img7.png)
+
+![刷入armbian](assets/e900v22e-armbian-android-tv/img8.png)
+
+![启动armbian](assets/e900v22e-armbian-android-tv/img9.png)
+
+![启动armbian](assets/e900v22e-armbian-android-tv/img10.png)
+
+![启动armbian](assets/e900v22e-armbian-android-tv/img11.jpg)
 ### 准备
 
 - 镜像：`Armbian_22.11.0_Aml_s905x_jammy_5.10.147_server`（ophub amlogic-s9xxx-armbian 仓库找 s905x 5.10）
@@ -62,3 +78,9 @@ cat /proc/device-tree/amlogic-dt-id   # 查看芯片
 
 - 百度网盘分享早已失效，刷机包请以 ophub 仓库 + 恩山论坛最新帖为准。
 - 刷机有风险，先备份原系统分区。
+
+![刷机](assets/e900v22e-armbian-android-tv/img3.png)
+
+![刷机](assets/e900v22e-armbian-android-tv/img4.png)
+
+![刷机](assets/e900v22e-armbian-android-tv/img5.png)

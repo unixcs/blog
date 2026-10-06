@@ -40,3 +40,33 @@ smbpasswd -a root && sudo samba restart
 手上先机新款 ufi_16v3，刷第三方包后 adb 正常，但 fastboot 下写入失败。知识补课：adb 是进 system 后的调试工具，fastboot 处于 bootloader 阶段，rec 相当于 PE 分区——写入失败多半和 boot 分区状态有关，换包/换线/换口逐一排除。
 
 资源包（miko 原厂包 + armbian 包）：原 123pan 链接已失效，请自行搜索同型号包。
+
+![前言](assets/suishen-wifi-debian/img1.png)
+
+![开始](assets/suishen-wifi-debian/img2.png)
+
+![刷入debian](assets/suishen-wifi-debian/img3.png)
+
+![刷入debian](assets/suishen-wifi-debian/img4.png)
+
+![刷入debian](assets/suishen-wifi-debian/img5.png)
+
+![刷入debian](assets/suishen-wifi-debian/img6.png)
+
+![刷入debian](assets/suishen-wifi-debian/img7.png)
+
+![刷入debian](assets/suishen-wifi-debian/img8.png)
+
+![刷入debian](assets/suishen-wifi-debian/img9.png)
+
+![刷入debian](assets/suishen-wifi-debian/img10.png)
+
+![debian 设置](assets/suishen-wifi-debian/img11.png)
+
+![debian 设置](assets/suishen-wifi-debian/img12.png)
+
+![debian 设置](assets/suishen-wifi-debian/img13.png)
+
+![debian 设置](assets/suishen-wifi-debian/img14.png)
+
+![坑](assets/suishen-wifi-debian/img15.png)
