@@ -15,7 +15,7 @@ tags: [OpenClash, WSL, SSH, 路由器, 代理迁移, 免密登录, dropbear]
 
 
 > 整理日期：2026-08-14
-> 设备：兆能 ZN M2（OpenWrt，ipq60xx，aarch64_cortex-a53），局域网 IP `192.168.2.1`
+> 设备：兆能 ZN M2（OpenWrt，ipq60xx，aarch64_cortex-a53），局域网 IP ``局域网IP（已脱敏）``
 > 本机环境：Windows + WSL2（Ubuntu-24.04），WSL 路径 `/mnt/vps`，本机即 `\\wsl.localhost\Ubuntu-24.04\mnt\vps`
 
 ---
@@ -43,7 +43,7 @@ tags: [OpenClash, WSL, SSH, 路由器, 代理迁移, 免密登录, dropbear]
 ### 2. 两个 vless 节点
 | 名称                        | 地址                   | 类型               |
 | ------------------------- | -------------------- | ---------------- |
-| `Reality-aws`             | `3.34.96.187:1443`   | vless + reality  |
+| `Reality-aws`             | ``你的服务器IP（已脱敏）`:1443`   | vless + reality  |
 | `vless9443-CF-Tunnel-443` | `douy.indevs.in:443` | vless + ws + tls |
 |                           |                      |                  |
 
@@ -80,7 +80,7 @@ proxy-groups:
 - `fallback`：`8.8.8.8` / `1.1.1.1` / 阿里 DNS
 
 ### 6. 外部控制面板（yacd）
-- 面板地址：`http://192.168.2.1:9090/ui/yacd/`
+- 面板地址：`http://`局域网IP（已脱敏）`:9090/ui/yacd/`
 - `external-controller`：`0.0.0.0:9090`
 - `secret`：`123456`（**弱口令，建议改强**）
 
@@ -103,12 +103,12 @@ proxy-groups:
 
 | 现象 | 根因 | 解决 |
 |------|------|------|
-| 面板打开报 `Oops, something went wrong!` | 用户误删了 yacd 里保存的后端，面板默认连 `localhost:9090`（连的是用户电脑，没有 clash） | 重新在 yacd 右下角【切换后端】填入 `http://192.168.2.1:9090` + 密钥 `123456` |
-| 填短链 `shturl.cc/...` 返回 `Not Found` | 把短链当 API 地址了；404 说明服务器在，但路径不是 clash API | 正确地址是 `http://192.168.2.1:9090` |
-| 打开 `http://192.168.2.1:9090/` 报 `{"message":"Unauthorized"}` | 浏览器没带 Bearer Token，clash 正常拒绝（401 类） | 这是正常现象，让 yacd 带密钥访问即可，API 本身健康 |
+| 面板打开报 `Oops, something went wrong!` | 用户误删了 yacd 里保存的后端，面板默认连 `localhost:9090`（连的是用户电脑，没有 clash） | 重新在 yacd 右下角【切换后端】填入 `http://`局域网IP（已脱敏）`:9090` + 密钥 `123456` |
+| 填短链 `shturl.cc/...` 返回 `Not Found` | 把短链当 API 地址了；404 说明服务器在，但路径不是 clash API | 正确地址是 `http://`局域网IP（已脱敏）`:9090` |
+| 打开 `http://`局域网IP（已脱敏）`:9090/` 报 `{"message":"Unauthorized"}` | 浏览器没带 Bearer Token，clash 正常拒绝（401 类） | 这是正常现象，让 yacd 带密钥访问即可，API 本身健康 |
 | 切到 `AUTO` 报 `Selector update error: proxy not exist` | 原 `PROXY` 是 fallback 类型，成员里没有 `AUTO` | 重构为：`AUTO` 独立 fallback 组，`PROXY` 改为 select 且首成员为 `AUTO` |
 
-**验证**：手动切到 `Reality-aws` 后，出口 IP 变为 `3.34.96.187`，生效。
+**验证**：手动切到 `Reality-aws` 后，出口 IP 变为 ``你的服务器IP（已脱敏）``，生效。
 
 ---
 
@@ -146,7 +146,7 @@ Windows 上的 V2Ray 监听 `127.0.0.1:10808`，WSL 通过 `localhost:10808` 转
   ```
 - **Windows 桌面一键切换脚本**（已建在 `C:\Users\fengx\Desktop\`）：
   - `switch_auto.bat` / `switch_reality.bat` / `switch_vless9443.bat`
-  - 原理：用 curl `PUT http://192.168.2.1:9090/proxies/PROXY`，带 `Authorization: Bearer 123456`，一键切节点。
+  - 原理：用 curl `PUT http://`局域网IP（已脱敏）`:9090/proxies/PROXY`，带 `Authorization: Bearer 123456`，一键切节点。
 
 ### 3. 默认行为
 - 新开的终端 / 服务：无代理变量 → 直连 → 由路由器 OpenClash 透明代理接管。
@@ -181,12 +181,12 @@ Windows V2Ray 关掉后，`127.0.0.1:10808` 成了死代理，所有继承了它
 4. 全局核查：确认**全系统已无任何进程持有 `127.0.0.1:10808`**。
 
 ### codex 专项说明
-- codex 配置指向局域网网关 `http://192.168.2.223:8317/v1`（本地 "muyuan" 服务），不是直连外网。
+- codex 配置指向局域网网关 `http://`局域网IP（已脱敏）`:8317/v1`（本地 "muyuan" 服务），不是直连外网。
 - 当前 codex 进程环境零代理变量，网关在线可达，干净环境直连 google=200。
 - 结论：codex 已被这次系统级清理顺带修好；若仍看到旧窗口没网，关掉重开即可。
 
 ### 验收
-- 新干净 shell：`google=200`，出口 IP `3.34.96.187`（走 `Reality-aws` 节点），证明路由器透明代理生效。
+- 新干净 shell：`google=200`，出口 IP ``你的服务器IP（已脱敏）``（走 `Reality-aws` 节点），证明路由器透明代理生效。
 
 ---
 

@@ -17,7 +17,7 @@ tags: [AI工程]
 你在 **Telegram 发一句话** → 家里 NAS 上的 **Hermes** → 腾讯云服务器 **tx** 上的 **CodeX** 自动写代码/跑命令 → 结果回给你。
 
 ```
-Telegram ──⟩ Hermes(jp: 192.168.2.223) ──⟩ SSH强制命令 ──⟩ codex-run(tx: 124.222.144.181)
+Telegram ──⟩ Hermes(jp: `局域网IP（已脱敏）`) ──⟩ SSH强制命令 ──⟩ codex-run(tx: `你的服务器IP（已脱敏）`)
                                                                       │
                                                                    Docker容器(隔离笼子)
                                                                       │
@@ -30,8 +30,8 @@ Telegram ──⟩ Hermes(jp: 192.168.2.223) ──⟩ SSH强制命令 ──⟩
 
 | 项目 | 值 | 备注 |
 |---|---|---|
-| tx(腾讯云) | `124.222.144.181`, Ubuntu 22.04 | 跑着你的商城 **yoshop**,**绝不能动** |
-| jp(家里 NAS) | `192.168.2.223` | Hermes 进程在这 |
+| tx(腾讯云) | ``你的服务器IP（已脱敏）``, Ubuntu 22.04 | 跑着你的商城 **yoshop**,**绝不能动** |
+| jp(家里 NAS) | ``局域网IP（已脱敏）`` | Hermes 进程在这 |
 | 入口脚本 | `tx:/usr/local/sbin/codex-run` | 唯一入口,SSH 强制命令调用 |
 | CodeX 版本 | **锁定 0.94.0** | 见第四节,别升级 |
 | 模型 | OpenCode Zen,`/v1/chat/completions` | 免费小模型 deepseek-v4-flash-free |
@@ -109,7 +109,7 @@ Telegram 里:
 ```
 /tx-codex-remote 帮我看下 status
 ```
-或 SSH:`ssh root@124.222.144.181 '/usr/local/sbin/codex-run status'`
+或 SSH:`ssh root@`你的服务器IP（已脱敏）` '/usr/local/sbin/codex-run status'`
 
 | 现象 | 处理 |
 |---|---|
@@ -122,3 +122,5 @@ Telegram 里:
 
 ---
 **相关**：[[8.13-Hermes-网关免费模型自动切换与报错修复]] [[4.30-Cloudflare-Tunnel-0基础手动安装教程]] [[腾讯云环境快速上手]] [[8.9 公众号自动发布工作流流程图]] [[8.9 公众号自动发布工作流部署]] [[8.10 vikunja-任务-计划]] [[对话笔记全量梳理表]]
+
+> 注：本文涉及的服务器公网 IP / Tailnet / 局域网 IP 已脱敏，请替换为你自己的地址。

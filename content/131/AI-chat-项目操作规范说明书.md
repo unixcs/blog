@@ -24,8 +24,8 @@ tags: [网络基建]
 本文档适用于以下对象：
 
 1. GitHub 仓库：`https://github.com/unixcs/AI-chat`
-2. 服务器：`121.41.192.80`
-3. 服务器：`121.41.206.32`
+2. 服务器：``你的服务器IP（已脱敏）``
+3. 服务器：``你的服务器IP（已脱敏）``
 4. Docker 部署场景
 5. DeepSeek API 配置与提示词文件管理
 
@@ -33,12 +33,12 @@ tags: [网络基建]
 
 本项目当前涉及两台生产服务器，默认使用 `admin` 用户通过 SSH 登录。
 
-1. `121.41.192.80`
-   - SSH：`ssh admin@121.41.192.80`
+1. ``你的服务器IP（已脱敏）``
+   - SSH：`ssh admin@`你的服务器IP（已脱敏）``
    - Hostname：`iZbp15kdyy928z0o7i8p1nZ`
    - 项目目录：`/opt/AI-chat`
-2. `121.41.206.32`
-   - SSH：`ssh admin@121.41.206.32`
+2. ``你的服务器IP（已脱敏）``
+   - SSH：`ssh admin@`你的服务器IP（已脱敏）``
    - Hostname：`iZbp1d00qv2i2wyo5nj6hbZ`
    - 项目目录：`/opt/AI-chat`
 
@@ -134,8 +134,8 @@ MODEL_KEY_COOLDOWN_MS=60000
 
 最近一次双机升级已完成以下动作：
 
-1. `121.41.206.32` 已从 `/opt/AI-chat-data/db` 迁移到 `/srv/ai-chat/data`
-2. `121.41.192.80` 已从 `/opt/AI-chat/backend/data.sqlite*` 迁移到 `/srv/ai-chat/data`
+1. ``你的服务器IP（已脱敏）`` 已从 `/opt/AI-chat-data/db` 迁移到 `/srv/ai-chat/data`
+2. ``你的服务器IP（已脱敏）`` 已从 `/opt/AI-chat/backend/data.sqlite*` 迁移到 `/srv/ai-chat/data`
 3. 两台服务器当前都已切换为目录挂载：`/srv/ai-chat/data:/app/data`
 4. 两台服务器当前都已验证健康接口正常
 5. 两台服务器当前都已验证核心表可读，且能正常处理真实请求流量
@@ -362,3 +362,5 @@ docker compose ps
 
 ---
 **相关**：[[7.17-WSL_YoShop与CRMEB_Docker手动启停部署说明]] [[8.13-Hermes-网关免费模型自动切换与报错修复]] [[7.25-在-yun1-部署-new-api-并通过-Cloudflare-域名-HTTPS-访问-—-实操记录]] [[7.11美的空调midea_ac_lan插件迁移记录]] [[7.13 HA巴法云插件兼容修复]] [[7.23 白嫖云盘cftc,tgState,tgNetDisc]] [[对话笔记全量梳理表]]
+
+> 注：本文涉及的服务器公网 IP / Tailnet / 局域网 IP 已脱敏，请替换为你自己的地址。

@@ -57,7 +57,7 @@ D:\Program\soft\电脑软件\CclipShare\clipshare.exe
 
 方法一（推荐）：电脑端 ClipShare 主界面点「我的设备」，点右上角「加号」，弹窗里会显示本机 IP，同时有二维码，手机可直接扫。
 
-方法二（系统里看）：按 Win 加 I 打开设置，网络和 Internet，点正在用的网络，属性，往下找 IPv4 地址，形如 192.168.1.5。
+方法二（系统里看）：按 Win 加 I 打开设置，网络和 Internet，点正在用的网络，属性，往下找 IPv4 地址，形如 `局域网IP（已脱敏）`。
 
 手机添加电脑：
 1. 手机打开 ClipShare，点「我的设备」，点顶部「加号」。
@@ -126,3 +126,5 @@ D:\Program\soft\电脑软件\CclipShare\clipshare.exe
 
 ---
 **相关**：[[8.29-Tailscale-多设备组网排查与延迟需求]] [[8.15-OpenClash节点延迟诊断]] [[7.5-Onedrive-和-FastNote-方案对比]] [[8.5 公众号推送SOP与封面撑高bug修复]] [[对话笔记全量梳理表]]
+
+> 注：本文涉及的服务器公网 IP / Tailnet / 局域网 IP 已脱敏，请替换为你自己的地址。
